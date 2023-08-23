@@ -192,7 +192,8 @@ void setup()
 #ifdef USE_WIFI_TRANSPORT
     set_microros_net_transports(AGENT_IP, AGENT_PORT);
 #else
-    set_microros_serial_transports(Serial);
+    set_microros_wifi_transports// hacked
+   // set_microros_serial_transports(Serial);
 #endif
     syslog(LOG_INFO, "%s Ready %lu", __FUNCTION__, millis());
 }
